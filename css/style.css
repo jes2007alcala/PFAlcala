@@ -1,0 +1,273 @@
+.header {
+  background: #ffffff;
+  color: #4A4949;
+  padding: 2rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  .header a {
+    color: #4A4949;
+    text-decoration: none;
+    padding: 1rem 0; }
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .navigation ul li {
+    display: inline-block; }
+    .navigation ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: all 0.4s linear;
+      border-radius: 5px; }
+      .navigation ul li a:hover {
+        background: #bbb5b56c; }
+    .navigation ul li .banner {
+      width: 100%;
+      overflow: hidden; }
+
+.menu-icon {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem; }
+  .navigation {
+    width: 100%;
+    margin-top: 1rem; }
+    .navigation ul {
+      display: none; }
+      .navigation ul li {
+        display: block; }
+        .navigation ul li a {
+          display: block;
+          padding: 0.5rem 0rem;
+          transition: all 0.4s linear;
+          border-radius: 5px; }
+          .navigation ul li a:hover {
+            background: #bbb5b56c; } }
+
+.show {
+  display: block !important; }
+
+.logoNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.logoNavContainer img {
+  width: 10rem; }
+
+.logoNavContainerImg {
+  width: 70px; }
+
+.logo {
+  letter-spacing: 5px;
+  font-size: 1.3em; }
+
+.footer {
+  background: #c2dfe7;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 1rem; }
+
+h1 {
+  font-size: 50px;
+  color: #FFFFFF;
+  line-height: 1.3em; }
+
+h2 {
+  font-size: 40px;
+  color: #4A4949;
+  line-height: 1.3em; }
+
+h3 {
+  font-size: 20px;
+  font-style: bold;
+  color: #4A4949;
+  line-height: 1.3em; }
+
+Section {
+  background-color: #FFFFFF;
+  height: 598px; }
+
+Section secondary {
+  background-color: #FFFFFF; }
+
+Body {
+  background-color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin: 0; }
+
+.Section1Index {
+  width: 100%;
+  text-align: center; }
+
+.image-index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover; }
+
+.wild-life-circle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover; }
+
+.MiniGridWildlifeImage {
+  align-items: center;
+  justify-content: center; }
+
+.MiniGridFlightsImage {
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  width: 100%;
+  object-fit: cover; }
+
+.main {
+  padding-top: 3rem;
+  /* width: 100vw; */ }
+
+#sectionWildlife1 {
+  width: 100%;
+  text-align: center; }
+
+#grid-container-wildlife {
+  display: grid;
+  grid-template-areas: "sectionWildlife1 sectionWildlife1 sectionWildlife1" "sectionWildlife21 sectionWildlife22 sectionWildlife23" "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+  grid-template-rows: 0.4fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 50px; }
+
+#grid-container-ant-flight {
+  display: grid;
+  grid-template-areas: "sectionWildlife1 sectionWildlife1 sectionWildlife1" "sectionWildlife21 sectionWildlife22 sectionWildlife22" "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 50px; }
+
+#Wildlife1 {
+  grid-area: sectionWildlife1;
+  width: auto; }
+
+#Wildlife21 {
+  grid-area: sectionWildlife21;
+  width: auto; }
+
+#Wildlife22 {
+  grid-area: sectionWildlife22;
+  width: auto; }
+
+#Wildlife23 {
+  grid-area: sectionWildlife23;
+  width: auto; }
+
+#Wildlife3 {
+  grid-area: sectionWildlife3;
+  width: auto;
+  display: flex; }
+
+.miniWildlifeGrid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  justify-items: center; }
+
+.gridContainerIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 50px; }
+
+.container {
+  max-width: 850px;
+  margin: 0 auto; }
+
+.containerItem1 {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+.containerItem2 {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 6rem; }
+
+.image-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  width: 100%;
+  object-fit: cover; }
+
+@media all and (max-width: 500px) {
+  main #grid-container-wildlife {
+    display: grid;
+    grid-template-areas: "sectionWildlife1" "sectionWildlife21" "sectionWildlife22" "sectionWildlife23" "sectionWildlife3";
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+  main #grid-container-ant-flight {
+    display: grid;
+    grid-template-areas: "sectionWildlife1" "sectionWildlife21" "sectionWildlife22" "sectionWildlife23" "sectionWildlife3";
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+  main .image-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    object-fit: cover; }
+  main .miniWildlifeGrid {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    justify-content: center; }
+  main .MiniGridWildlifeImage {
+    align-items: center;
+    justify-content: center;
+    width: 50%; }
+  main .MiniGridFlightsImage {
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    object-fit: cover; }
+  main .gridContainerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+  main .container {
+    max-width: 90%;
+    margin: 0 auto; }
+  .banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7rem; }
+  .image-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover; } }

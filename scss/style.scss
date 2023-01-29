@@ -1,0 +1,243 @@
+@import "header";
+@import "logos";
+@import "footer";
+
+
+h1{ font-size:50px ; color:#FFFFFF; line-height: 1.3em}
+h2{ font-size:40px ; color:#4A4949; line-height: 1.3em}
+h3{ font-size: 20px; font-style:bold ; color:#4A4949; line-height: 1.3em}
+Section { background-color: #FFFFFF; height:598px ;}
+Section secondary { background-color: #FFFFFF;
+}
+
+Body {background-color:#FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.Section1Index {
+width: 100%;
+text-align: center;
+
+}
+
+.image-index{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.wild-life-circle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.MiniGridWildlifeImage {
+    align-items: center;
+    justify-content: center;
+    }
+
+.MiniGridFlightsImage {
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    }
+
+.main {
+    padding-top: 3rem;
+    /* width: 100vw; */
+}
+
+#sectionWildlife1{
+    width: 100%;
+    text-align: center;
+}
+
+#grid-container-wildlife{
+    display: grid;
+    grid-template-areas:
+    "sectionWildlife1 sectionWildlife1 sectionWildlife1"
+    "sectionWildlife21 sectionWildlife22 sectionWildlife23"
+    "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+    
+}
+
+#grid-container-ant-flight{
+    display: grid;
+    grid-template-areas:
+    "sectionWildlife1 sectionWildlife1 sectionWildlife1"
+    "sectionWildlife21 sectionWildlife22 sectionWildlife22"
+    "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+    
+}
+
+#Wildlife1{
+    grid-area: sectionWildlife1;
+    width: auto;
+}
+
+#Wildlife21{
+    grid-area: sectionWildlife21;
+    width: auto;
+}
+
+#Wildlife22{
+    grid-area: sectionWildlife22;
+    width: auto;
+}
+
+#Wildlife23{
+    grid-area: sectionWildlife23;
+    width: auto;
+}
+
+#Wildlife3{
+    grid-area: sectionWildlife3;
+    width: auto;
+    display: flex;
+}
+.miniWildlifeGrid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+.gridContainerIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    //grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.containerItem1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.containerItem2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+
+.image-header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media all and (max-width: 500px) {
+    main{
+        #grid-container-wildlife{
+            display: grid;
+            grid-template-areas:
+            "sectionWildlife1"
+            "sectionWildlife21"
+            "sectionWildlife22"
+            "sectionWildlife23"
+            "sectionWildlife3";
+            //grid-template-rows: 0.4fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+        #grid-container-ant-flight{
+            display: grid;
+            grid-template-areas:
+            "sectionWildlife1"
+            "sectionWildlife21"
+            "sectionWildlife22"
+            "sectionWildlife23"
+            "sectionWildlife3";
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+        .image-index{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            object-fit: cover;
+            
+        }
+        .miniWildlifeGrid{
+            display: grid;
+            align-items: center;
+            grid-template-rows: 1fr ;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            justify-content: center;
+        }
+        .MiniGridWildlifeImage {
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            }
+
+        .MiniGridFlightsImage {
+            align-items: center;
+            justify-content: center;
+            height: 20rem;
+            object-fit: cover;
+            }
+            
+        .gridContainerIndex{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .container{
+            max-width: 90%;
+            margin: 0 auto;
+        }    
+    }
+    .banner {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 7rem;
+    }
+    .image-header{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
