@@ -54,16 +54,13 @@
 .show {
   display: block !important; }
 
-.logoNavContainer {
+.logo-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
 
-.logoNavContainer img {
-  width: 10rem; }
-
-.logoNavContainerImg {
+.logo-nav-container-img {
   width: 70px; }
 
 .logo {
@@ -106,7 +103,7 @@ Body {
   line-height: 1.4em;
   margin: 0; }
 
-.Section1Index {
+.Section-1-index {
   width: 100%;
   text-align: center; }
 
@@ -126,11 +123,11 @@ Body {
   justify-content: center;
   object-fit: cover; }
 
-.MiniGridWildlifeImage {
+.Mini-Grid-Wildlife-Image {
   align-items: center;
   justify-content: center; }
 
-.MiniGridFlightsImage {
+.Mini-Grid-Flights-Image {
   align-items: center;
   justify-content: center;
   height: 20rem;
@@ -141,13 +138,15 @@ Body {
   padding-top: 3rem;
   /* width: 100vw; */ }
 
-#sectionWildlife1 {
+#section-Wildlife-1 {
   width: 100%;
   text-align: center; }
 
 #grid-container-wildlife {
   display: grid;
-  grid-template-areas: "sectionWildlife1 sectionWildlife1 sectionWildlife1" "sectionWildlife21 sectionWildlife22 sectionWildlife23" "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+  grid-template-areas: "section-Wildlife-1 section-Wildlife-1 section-Wildlife-1"
+ "sectionWildlife21 sectionWildlife22 sectionWildlife23"
+ "sectionWildlife3 sectionWildlife3 sectionWildlife3";
   grid-template-rows: 0.4fr 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 25px;
@@ -155,13 +154,15 @@ Body {
 
 #grid-container-ant-flight {
   display: grid;
-  grid-template-areas: "sectionWildlife1 sectionWildlife1 sectionWildlife1" "sectionWildlife21 sectionWildlife22 sectionWildlife22" "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+  grid-template-areas: "section-Wildlife-1 section-Wildlife-1 section-Wildlife-1"
+ "sectionWildlife21 sectionWildlife22 sectionWildlife22"
+ "sectionWildlife3 sectionWildlife3 sectionWildlife3";
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 25px;
   grid-column-gap: 50px; }
 
 #Wildlife1 {
-  grid-area: sectionWildlife1;
+  grid-area: section-Wildlife-1;
   width: auto; }
 
 #Wildlife21 {
@@ -181,14 +182,14 @@ Body {
   width: auto;
   display: flex; }
 
-.miniWildlifeGrid {
+.mini-Wildlife-Grid {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
   justify-items: center; }
 
-.gridContainerIndex {
+.grid-Container-Index {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 50px; }
@@ -197,11 +198,11 @@ Body {
   max-width: 850px;
   margin: 0 auto; }
 
-.containerItem1 {
+.container-Item-1 {
   grid-column-start: 1;
   grid-column-end: 3; }
 
-.containerItem2 {
+.container-Item-2 {
   grid-column-start: 1;
   grid-column-end: 3; }
 
@@ -221,13 +222,21 @@ Body {
 @media all and (max-width: 500px) {
   main #grid-container-wildlife {
     display: grid;
-    grid-template-areas: "sectionWildlife1" "sectionWildlife21" "sectionWildlife22" "sectionWildlife23" "sectionWildlife3";
+    grid-template-areas: "section-Wildlife-1"
+ "sectionWildlife21"
+ "sectionWildlife22"
+ "sectionWildlife23"
+ "sectionWildlife3";
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px; }
   main #grid-container-ant-flight {
     display: grid;
-    grid-template-areas: "sectionWildlife1" "sectionWildlife21" "sectionWildlife22" "sectionWildlife23" "sectionWildlife3";
+    grid-template-areas: "section-Wildlife-1"
+ "sectionWildlife21"
+ "sectionWildlife22"
+ "sectionWildlife23"
+ "sectionWildlife3";
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px; }
@@ -237,23 +246,23 @@ Body {
     justify-content: center;
     height: 200px;
     object-fit: cover; }
-  main .miniWildlifeGrid {
+  main .mini-Wildlife-Grid {
     display: grid;
     align-items: center;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
     justify-content: center; }
-  main .MiniGridWildlifeImage {
+  main .Mini-Grid-Wildlife-Image {
     align-items: center;
     justify-content: center;
     width: 50%; }
-  main .MiniGridFlightsImage {
+  main .Mini-Grid-Flights-Image {
     align-items: center;
     justify-content: center;
     height: 20rem;
     object-fit: cover; }
-  main .gridContainerIndex {
+  main .grid-Container-Index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr; }
